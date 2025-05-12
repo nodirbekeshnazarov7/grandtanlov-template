@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Grant Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/landing.css">
+  <style>
+    .grant-card {
+      border-radius: 1.5rem;
+      color: white;
+      padding: 2rem;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      overflow: hidden;
+      min-height: 280px;
+    }
+    .grant-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+    }
+    .grant-icon {
+      font-size: 2.5rem;
+      background: rgba(255,255,255,0.2);
+      padding: 0.8rem;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+    .grant-badge {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.5rem;
+      background-color: rgba(255, 255, 255, 0.25);
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+    }
+    .grant-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .grant-desc {
+      font-size: 0.9rem;
+      opacity: 0.95;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <div class="logo-wrapper">
+            <img style="width: 30px;" class="logo" src="./images/logo_tersu.png" alt="logo">
+            <span class="logo-text">Grand Tanlov</span>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Haqida</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#grants">Grantlar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Bog'lanish</a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-primary login-btn" href="login.html">Kirish</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="hero-title">Grand tanlov uchun ariza berish platformasi</h1>
+            <p class="hero-subtitle">Talabalar o'zining profili orqali Grand tanlov uchun ariza bera oladilar</p>
+            <div class="hero-cta">
+              <a href="login.html" class="btn btn-primary btn-lg">Ariza berish</a>
+              <a href="#grants" class="btn btn-outline-secondary btn-lg ms-2">Ko'proq bilish</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <img src="./images/terdu.jpg" alt="Students collaborating" class="img-fluid rounded">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top: 100px;" id="about" class="about-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Grantlar haqida ma'lumot</h2>
+          <p>Grand tanlov quyidagi komissiya orqali baholanadi</p>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="feature-card">
+              <div class="feature-icon scholarship-icon"></div>
+              <h3>Akademik o‘zlashtirish ko‘rsatkichini aniqlash bo‘yicha komissiya</h3>
+              <p>taʼlim grantiga talabgorlarning akademik o‘zlashtirish ko‘rsatkichlarini aniqlash uchun oliy taʼlim tashkiloti rektori tomonidan o‘quv ishlari bo‘yicha prorektor raisligida 9 nafardan kam bo‘lmagan tarkibda tuziladigan komissiya</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-card">
+              <div class="feature-icon support-icon"></div>
+              <h3>Ijtimoiy faollikni aniqlash bo‘yicha komissiya</h3>
+              <p>Taʼlim grantiga talabgorlarning ijtimoiy faolligini aniqlash uchun oliy taʼlim tashkiloti rektori tomonidan yoshlar masalalari va maʼnaviy-maʼrifiy ishlar bo‘yicha prorektor raisligida 9 nafardan kam bo‘lmagan tarkibda tuziladigan komissiya</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-card">
+              <div class="feature-icon research-icon"></div>
+              <h3>Maxsus komissiya</h3>
+              <p>Akademik zlashtirish ko‘rsatkichini aniqlash bo‘yicha komissiya hamda Ijtimoiy faollikni aniqlash bo‘yicha komissiya tomonidan taqdim etilgan natijalarni umumlashtirib, ko‘rib chiqish uchun oliy taʼlim tashkiloti rektori raisligida 9 nafardan kam bo‘lmagan tarkibda tashkil etiladigan komissiya</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top: 100px;" id="grants" class="grants-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Mavjud grantlar</h2>
+          <p>Oliy taʼlim tashkilotining taʼlim granti ajratilgan bakalavriat taʼlim yo‘nalishi (magistratura mutaxassisligi) bo‘yicha IKKINCHI va undan KEYINGI KURSLARDA tahsil olayotgan, taʼlim grantini qayta taqsimlashda ishtirok etish istagini bildirgan TALABA</p>
+        </div>
+        <div class="row mt-5">
+          <!-- To'liq Grant -->
+    <div class="col-lg-3 col-md-6">
+      <div class="grant-card" style="background: linear-gradient(135deg, #4e54c8, #8f94fb);">
+        <div class="grant-badge">To'liq</div>
+        <div class="grant-icon"><i class="bi bi-mortarboard-fill"></i></div>
+        <div class="grant-title">To'liq Grant</div>
+        <div class="grant-desc">
+          Bir o‘quv yili uchun berilib, o‘qitish harajati DAVLAT BYUDJETIDAN to‘liq qoplab beriladigan va umumiy tartibdagi STIPENDIYA BILAN TAʼMINLANADIGAN taʼlim granti
+          </div>
+      </div>
+    </div>
+
+    <!-- To'liq bo'lmagan Grant -->
+    <div class="col-lg-3 col-md-6">
+      <div class="grant-card" style="background: linear-gradient(135deg, #f7971e, #ffd200);">
+        <div class="grant-badge">Qisman</div>
+        <div class="grant-icon"><i class="bi bi-cash-coin"></i></div>
+        <div class="grant-title">To'liq bo'lmagan Grant</div>
+        <div class="grant-desc">
+          Bir o‘quv yili uchun berilib, to‘lov-kontrakt summasining 50 FOIZI Davlat byudjetidan qoplab beriladigan va umumiy tartibdagi stipendiya bilan TAʼMINLANMAYDIGAN taʼlim granti
+        </div>
+      </div>
+    </div>
+
+    <!-- Qo'shimcha davlat granti -->
+    <div class="col-lg-3 col-md-6">
+      <div class="grant-card" style="background: linear-gradient(135deg, #43cea2, #185a9d);">
+        <div class="grant-badge">Davlat</div>
+        <div class="grant-icon"><i class="bi bi-stars"></i></div>
+        <div class="grant-title">Qo'shimcha Davlat Granti</div>
+        <div class="grant-desc">
+          Oliy taʼlim tashkilotlarining bakalavriat taʼlim yo‘nalish-larida muayyan o‘quv yili yakuni bo‘yicha GPA ko‘rsatkichi 4 VA UNDAN YUQORI BO‘LGAN, Ijtimoiy himoya milliy agentligi hamda Oliy taʼlim, fan va innovatsiyalar vazirligi tomonidan belgilanadigan toifadagi talabalarning (keyingi o‘rinlarda belgilangan toifadagi talabalar) navbatdagi o‘quv yili uchun o‘qitish harajati Davlat byudjetidan to‘liq qoplab beriladigan va umumiy tartibdagi STIPENDIYA BILAN TAʼMINLANADIGAN grant
+        </div>
+      </div>
+    </div>
+
+    <!-- Oliy ta'lim tashkiloti tomonidan grant -->
+    <div class="col-lg-3 col-md-6">
+      <div class="grant-card" style="background: linear-gradient(135deg, #ff416c, #ff4b2b);">
+        <div class="grant-badge">OTM</div>
+        <div class="grant-icon"><i class="bi bi-building"></i></div>
+        <div class="grant-title">Oliy ta'lim tashkiloti Granti</div>
+        <div class="grant-desc">
+          Moliyaviy mustaqillik berilgan oliy taʼlim tashkilotlari tomonidan ularda bakalavriat taʼlim yo‘nalishlari bo‘yicha tahsil oluvchi belgilangan toifadagi talabalarning GPA ko‘rsatkichi 3,3 dan 4 gacha bo‘lganda, ularning navbatdagi o‘quv yili uchun belgilangan to‘lovkontrakt summasining 20 FOIZDAN 80 FOIZGACHA bo‘lgan qismini ushbu oliy taʼlim tashkilotining byudjetdan tashqari mablag‘lari hisobidan qoplanadigan grant
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="testimonials" class="testimonial-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Student Success Stories</h2>
+          <p>Hear from students who benefited from our grants</p>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="testimonial-avatar">
+                <img
+                  src="https://images.pexels.com/photos/6326377/pexels-photo-6326377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+                  alt="Student portrait" class="img-fluid rounded-circle">
+              </div>
+              <p class="testimonial-text">"The main grant was instrumental in helping me complete my degree without
+                financial stress."</p>
+              <p class="testimonial-author">- Alex Johnson, Engineering</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="testimonial-avatar">
+                <img
+                  src="https://images.pexels.com/photos/6326198/pexels-photo-6326198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+                  alt="Student portrait" class="img-fluid rounded-circle">
+              </div>
+              <p class="testimonial-text">"Thanks to the additional grant, I was able to present my research at an
+                international conference."</p>
+              <p class="testimonial-author">- Maria Garcia, Sciences</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="testimonial-avatar">
+                <img
+                  src="https://images.pexels.com/photos/6326384/pexels-photo-6326384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+                  alt="Student portrait" class="img-fluid rounded-circle">
+              </div>
+              <p class="testimonial-text">"The funding I received made it possible for me to focus on my studies without
+                working multiple jobs."</p>
+              <p class="testimonial-author">- David Kim, Business</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section style="padding-top: 100px;" id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Yordam kerakmi?</h2>
+          <p>Bizning qo'llab-quvvatlash jamoamiz savollaringizga yordam berish uchun shu yerda</p>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-5">
+            <div class="contact-info bg-primary">
+              <h3>Bog'lanish uchun ma'lumot</h3>
+              <p>Agar sizda grant dasturlarimiz haqida savollaringiz boʻlsa yoki arizangiz boʻyicha yordamga muhtoj boʻlsangiz, biz bilan bogʻlaning.</p>
+              <ul class="contact-details list-unstyled">
+                <li>
+                  <i class="bi bi-envelope-fill me-2 text-white"></i>
+                  grants@university.edu
+                </li>
+                <li>
+                  <i class="bi bi-telephone-fill me-2 text-white"></i>
+                  (555) 123-4567
+                </li>
+                <li>
+                  <i class="bi bi-geo-alt-fill me-2 text-white"></i>
+                  Termiz davlat universiteti
+                </li>
+              </ul>
+              
+              <div class="contact-hours">
+                <h4>Ish vaqti</h4>
+                <p>Dushanba - Juma: 9:00 dan 17:00 gacha</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="contact-form-container">
+              <h3>Bizga xabar yuboring</h3>
+              <form id="contactForm" class="contact-form">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="name" class="form-label">To'liq ism</label>
+                    <input type="text" class="form-control" id="name" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Email adres</label>
+                    <input type="email" class="form-control" id="email" required>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Mavzu</label>
+                  <input type="text" class="form-control" id="subject" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Xabar</label>
+                  <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Xabar yuborish</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="footer-about">
+            <h3>Grand Tanlov</h3>
+            <p>Akademik mukammallikni qo'llab-quvvatlash va universitet talabalari uchun keng qamrovli imkoniyatlarni taqdim etish 
+              grant dasturlari.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-2">
+          <div class="footer-links">
+            <h4>Tezkor havolalar</h4>
+            <ul>
+              <li><a href="index.html">Asosiy sahifa</a></li>
+              <li><a href="#about">Haqida</a></li>
+              <li><a href="#grants">Grantlar</a></li>
+              <li><a href="login.html">kirish</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- <div class="col-md-3 col-lg-2">
+          <div class="footer-links">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Application Guide</a></li>
+              <li><a href="#">Eligibility</a></li>
+              <li><a href="#">Deadlines</a></li>
+            </ul>
+          </div>
+        </div> -->
+        <div class="col-md-6 col-lg-4">
+          <div class="footer-newsletter">
+            <h4>Yangilanib turing</h4>
+            <p>Bizni kuzatib boring.</p>
+            <form class="newsletter-form">
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Your email address" required>
+                <button class="btn btn-primary" type="submit">Yuborish</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="copyright">© 2025 UniGrant Portal. All rights reserved.</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="footer-social list-unstyled d-flex gap-3">
+              <li>
+                <a href="#" class="text-decoration-none text-primary fs-4">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-info fs-4">
+                  <i class="bi bi-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-danger fs-4">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-primary fs-4">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
